@@ -7,7 +7,7 @@ de uma pasta e carrega cada um em uma tabela própria, multas_<uf>,
 dentro do schema bronze do PostgreSQL.
 
 - A pasta dos CSVs e a conexão com o banco vêm do arquivo .env
-  (que fica na mesma pasta deste script).
+  (que fica na pasta root deste repositório).
 - A tabela é criada se não existir. Se já existir, o conteúdo é
   substituído (TRUNCATE + carga), então rodar de novo não duplica dados.
 - Bronze = dado bruto: todas as colunas são gravadas como texto, sem
